@@ -46,14 +46,14 @@ addUnitToGroup("Torpedo_Launcher", "BRPT1ADVNAVYGUN") -- Sera Anti Navy
 
 -- Fields
 addUnitToGroup("Stealth_Field_Generator", "brb4401") -- Cyrban Cloak field gen
-addUnitToGroup("Stealth_Field_Generator", "bsb4205") -- Sera Restoration field gen
+addUnitToGroup("Shields", "sbsb4205", 1) -- Sera Restoration field gen
+addUnitToGroup("Shields", "UEFSSG5", 1) -- UEF Advanced Shield Generator
+addUnitToGroup("Shields", "AeonSSG5", 1) -- Aeon Advanced Shield Generator
+addUnitToGroup("Shields", "SYSW5", 1) -- Sera Advanced Shield Generator
+addUnitToGroup("Shields", "urb42076", 1) -- Cybran Advanced Shield Generator
 
--- Super shields
-unitkeygroups["Super_Shield_Generator"] = {
-    "urb42076",
-    "UEFSSG5",
-    "AeonSSG",
-    "SYSW5",
-}
+-- TMD
+addUnitToGroup("Tactical_Missile_Defense", "bab4307", 1) -- Aeon T3 Tactical Missile Defense
 
-table.insert(unitkeygroups["Shields"], 1, "Super_Shield_Generator")
+-- XPs
+addUnitToGroup("Experimental", "UAC1201", 1) -- Aeon Mother Tortoise
