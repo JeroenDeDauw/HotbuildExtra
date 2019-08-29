@@ -54,7 +54,7 @@ addUnitToGroup("Shields", "SYSW5", 1) -- Sera Advanced Shield Generator
 addUnitToGroup("Shields", "urb42076", 1) -- Cybran Advanced Shield Generator
 
 -- TMD
-addUnitToGroup("Tactical_Missile_Defense", "bab4307", 1) -- Aeon T3 Tactical Missile Defense
+addUnitToGroup("Tactical_Missile_Defense", "bab4307") -- Aeon T3 Tactical Missile Defense
 
 -- XPs
 addUnitToGroup("Experimental", "UAC1201", 1) -- Aeon Mother Tortoise
