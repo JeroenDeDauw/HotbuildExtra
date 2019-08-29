@@ -35,6 +35,7 @@ addUnitToGroup("Artillery_Installation", "brot3pdro", 1) -- Aeon Zheela mk2 - (H
 addUnitToGroup("Artillery_Installation", "bsb2303", 1) -- Sera Land Mine Dispenser
 
 -- AA
+addUnitToGroup("Anti_Air", "SKYTRACKER", 1) -- Sky Tracker
 addUnitToGroup("Anti_Air", "SBROT1HPD", 1) -- Sky Tracker
 
 -- Navy defence
