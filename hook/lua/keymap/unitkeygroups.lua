@@ -19,9 +19,10 @@ addUnitToGroup("Heavy_Point_Defense", "brnt3shpd", 1) -- Ex-Catalyst - (Super He
 addUnitToGroup("Heavy_Point_Defense", "brnt3perses", 1) -- Perses - (Experimental Point Defense)
 
 -- Aeon PD
-addUnitToGroup("Point_Defense", "brot1expd", 1) -- Mizura - (Experimental Point Defense)
+addUnitToGroup("Point_Defense", "BROT1HPD", 1) -- Zpyker T1 PD
 addUnitToGroup("Heavy_Point_Defense", "BAB2306", 1) -- Aria T3 PD
 addUnitToGroup("Heavy_Point_Defense", "brot3shpd", 1) -- Brute - (Super Heavy Point Defense)
+
 
 -- Sera PD
 addUnitToGroup("Heavy_Point_Defense", "bsb2306", 1) -- Heavy Point Defense
