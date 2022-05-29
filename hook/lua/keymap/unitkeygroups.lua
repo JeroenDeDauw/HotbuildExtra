@@ -1,3 +1,4 @@
+-- https://github.com/FAForever/fa/blob/deploy/fafdevelop/lua/keymap/unitkeygroups.lua
 
 local function addUnitToGroup(keyGorupName, blueprintId, position)
     if position == nil then
@@ -7,57 +8,47 @@ local function addUnitToGroup(keyGorupName, blueprintId, position)
     end
 end
 
+unitkeygroups.Point_Defense = {
+    -- UEF PD
+    "ueb2101", -- UEF T1
+    "ueb2301", -- UEF T2
+    "brnt3shpd", -- T3 Ex-Catalyst (TotalMayhem)
+    "brnt3perses", -- T4 Perses (TotalMayhem)
+    "xeb2306", -- T3 Ravager
+    "brnt1hpdt2", -- T1 Thug MK2 (TotalMayhem)
 
--- Cybran PD
-addUnitToGroup("Heavy_Point_Defense", "brmt1pdt2", 1) --T1 Coyote Mk2 (Heavy Point Defence)
-addUnitToGroup("Heavy_Point_Defense", "brmt1expdt2", 1) --T1 Pen Mk2 (Experimental Point Defence / Anti Air)
+    -- Cybran PD
+    "urb2101", -- Cybran T1
+    "urb2301", -- Cybran T2
+    "brb2306", -- T3 Manticore (TotalMayhem)
+    "URB2306", -- T3 Obelisk (Survival Mayhem&BO balance)
+    "brmt1pd", -- T1 Coyote MK1 (TotalMayhem)
+    "brmt2pd", -- T2 Sabertooth (TotalMayhem)
 
-addUnitToGroup("Heavy_Point_Defense", "brmt2pd", 1) -- T2 Sabertooth (Heavy Point Defence)
-addUnitToGroup("Heavy_Point_Defense", "brmt2epd", 1) -- T2 Anode (Experimental Point Defence)
+    -- Aeon PD
+    "uab2101", -- Aeon T1
+    "uab2301", -- Aeon T2
+    "brot1hpd", -- T1 Zpyker (TotalMayhem)
+    "BAB2306", -- T3 Aria (TotalMayhem)
+    "brot3shpd", -- T3 Brute - (TotalMayhem)
 
-addUnitToGroup("Heavy_Point_Defense", "brb2306", 1) -- T3 Manticore (Heavy Point Defense)
-addUnitToGroup("Heavy_Point_Defense", "brmt3pd", 1) -- T3 Tripple Threat (Heavy Point Defense)
-addUnitToGroup("Heavy_Point_Defense", "URB2306", 1) -- T3 Obelisk (Heavy Point Defense)
+    -- Sera PD
+    "xsb2101", -- Sera T1
+    "xsb2301", -- Sera T2
+    "bsb0405", -- T4 Lambda  (Survival Mayhem&BO balance)
+    "brpt1pd", --T1 Hethula-Uttaus (TotalMayhem)
+    "brpt1expd", --T1 Ve-Us (TotalMayhem)
+    "brpt2expd", --T2 Heth-Athala (TotalMayhem)
+    "bsb2306", -- T3 Uttauthuum (Survival Mayhem&BO balance)
+}
 
--- UEF PD
-addUnitToGroup("Heavy_Point_Defense", "brnt1hpdt2", 1) -- T1 Thug MK2 (Heavy Point Defense)
-addUnitToGroup("Heavy_Point_Defense", "brnt1expdt2", 1) -- T1 Mayor MK2 (Experimental Point Defense / Anti Air)
-
-addUnitToGroup("Heavy_Point_Defense", "brnt2pd2", 1) --T2 Ace (Heavy Point Defence)
-addUnitToGroup("Heavy_Point_Defense", "brnt2epd", 1) --T2 Tower Boss Mk2 (Experimental Plasmacannon / Upgradeable) 
-addUnitToGroup("Heavy_Point_Defense", "brnt2epdt3", 1) --T2 Tower Boss Mk3 (Experimental Plasmacannon) 
-
-addUnitToGroup("Heavy_Point_Defense", "brnt3shpd", 1) -- T3 Ex-Catalyst (Super Heavy Point Defense)
-addUnitToGroup("Heavy_Point_Defense", "brnt3perses", 1) -- T4 Perses (Experimental Point Defense)
-
--- Aeon PD
-addUnitToGroup("Heavy_Point_Defense", "brot1hpd", 1) -- T1 Zpyker (Heavy Point Defense)
-addUnitToGroup("Heavy_Point_Defense", "brot1expd", 1) --T1 Mizura (Experimental Point Defence)(Anti Air)
-
-addUnitToGroup("Heavy_Point_Defense", "brot2epd", 1) --T2 Functionality (Experimental Point Defence / Anti Air)
-
-addUnitToGroup("Heavy_Point_Defense", "BAB2306", 1) -- T3 Aria (Heavy Point Defense)
-addUnitToGroup("Heavy_Point_Defense", "brot3shpd", 1) -- T3 Brute - (Super Heavy Point Defense)
-
-
--- Sera PD
-addUnitToGroup("Heavy_Point_Defense", "brpt1pd", 1) --T1 Hethula-Uttaus (Heavy Point Defence)
-addUnitToGroup("Heavy_Point_Defense", "brpt1expd", 1) --T1 Ve-Us (Experimental Point Defence / Anti Air)
-
-addUnitToGroup("Heavy_Point_Defense", "brpt2expd", 1) --T2 Heth-Athala (Experimental Point Defence / Anti Air)
-
-addUnitToGroup("Heavy_Point_Defense", "bsb2306", 1) -- T3 Uttauthuum (Heavy Point Defense)
-
-addUnitToGroup("Heavy_Point_Defense", "bsb0405", 1) -- T4 Lambda  (Exprimental Point Defense)
+unitkeygroups.Heavy_Point_Defense = {} -- Remove ravager from this group, which gets prepended to unitkeygroups.Point_Defense
 
 -- Arty 
 addUnitToGroup("Artillery_Installation", "brmt3pdro", 1) -- Cybran T3 Agronar (Rocket Defense System)
-
 addUnitToGroup("Artillery_Installation", "brnt2exart", 1) -- Uef T2 Big Jack Pad (Experimental Artillery Installation)
 addUnitToGroup("Artillery_Installation", "brnt3pdro", 1) -- Uef T3 Rocket Pad (Rocket Defense System)
-
 addUnitToGroup("Artillery_Installation", "brot3pdro", 1) -- Aeon T3 Aeon Zheela Mk2 (Heavy Plasma Artillery Installation)
-
 addUnitToGroup("Artillery_Installation", "brpt3pd", 1) -- Sera T3 Athaamla  (Heavy Point Defense)
 
 -- AA
